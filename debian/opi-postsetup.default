@@ -1,0 +1,10 @@
+# Defaults for opi-postsetup initscript
+# sourced by /etc/init.d/opi-postsetup
+# installed at /etc/default/opi-postsetup by the maintainer scripts
+
+#
+# This is a POSIX shell fragment
+#
+
+# Additional options that are passed to the Daemon.
+DAEMON_OPTS=""

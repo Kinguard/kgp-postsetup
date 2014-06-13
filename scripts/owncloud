@@ -1,0 +1,18 @@
+#! /bin/bash
+
+PWLEN=20
+
+APP=owncloud
+adm_pass=`echo "get dbconfig-common/mysql/admin-pass" | debconf-communicate | cut -d' ' -f2`
+ocpass=`pwgen -ns1 $PWLEN`
+
+DEBCONF="
+$APP $APP/dbconfig-install boolean true
+$APP $APP/dbconfig-reinstall boolean true
+$APP $APP/mysql/app-pass password $ocpass
+$APP $APP/mysql/admin-pass password $adm_pass
+"
+
+export DEBIAN_FRONTEND=noninteractive
+#echo "$DEBCONF"
+echo "$DEBCONF" | debconf-set-selections && dpkg-reconfigure $APP

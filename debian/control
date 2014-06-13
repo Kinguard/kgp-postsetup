@@ -1,0 +1,13 @@
+Source: opi-postsetup
+Section: misc
+Priority: important
+Maintainer: Tor Krill <tor@openproducts.se>
+Build-Depends: debhelper (>= 8.0.0)
+Standards-Version: 3.9.4
+Homepage: http://www.openproducts.se
+
+Package: opi-postsetup
+Architecture: all
+Depends: ${misc:Depends}
+Description: OPI post setup
+ Do activities to setup a newly installed system
