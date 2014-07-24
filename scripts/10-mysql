@@ -1,0 +1,7 @@
+#! /bin/bash
+
+adm_pass="95lAWvhMKMVgCd7nIbPk"
+
+echo "set dbconfig-common/mysql/admin-pass $adm_pass" | debconf-communicate > /dev/null
+
+mysqladmin -u root password $adm_pass

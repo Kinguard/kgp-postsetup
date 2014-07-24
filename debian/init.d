@@ -46,7 +46,9 @@ do_start()
 	#   1 if daemon was already running
 	#   2 if daemon could not be started
 
+	export DEBIAN_FRONTEND=noninteractive
 	run-parts $SCRIPTDIR
+	rm -f /etc/opi/firstboot
 }
 
 case "$1" in

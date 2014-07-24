@@ -1,3 +1,15 @@
+opi-postsetup (1.2) testing; urgency=low
+
+  * Add static passwords for mysql and apps
+
+ -- Tor Krill <tor@openproducts.se>  Fri, 25 Jul 2014 00:35:23 +0200
+
+opi-postsetup (1.1) testing; urgency=low
+
+  * Remove firstboot flag after run
+
+ -- Tor Krill <tor@openproducts.se>  Fri, 13 Jun 2014 16:06:56 +0200
+
 opi-postsetup (1.0) testing; urgency=low
 
   * Initial Release.

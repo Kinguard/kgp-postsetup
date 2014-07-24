@@ -3,8 +3,8 @@
 PWLEN=20
 
 APP=roundcubemail
-adm_pass=`echo "get dbconfig-common/mysql/admin-pass" | debconf-communicate | cut -d' ' -f2`
-ocpass=`pwgen -ns1 $PWLEN`
+adm_pass="95lAWvhMKMVgCd7nIbPk"
+ocpass="sutuPMQbhrTJaMcbDY1q"
 
 DEBCONF="
 $APP $APP/dbconfig-install boolean true
