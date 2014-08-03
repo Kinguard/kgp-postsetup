@@ -1,0 +1,4 @@
+debian/opi-postsetup
+debian/opi-postsetup.*debhelper*
+debian/files
+debian/*.substvars

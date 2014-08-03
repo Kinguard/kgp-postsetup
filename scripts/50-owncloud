@@ -1,5 +1,7 @@
 #! /bin/bash
 
+/usr/sbin/service mysql start
+
 PWLEN=20
 
 APP=owncloud
@@ -16,3 +18,5 @@ $APP $APP/mysql/admin-pass password $adm_pass
 export DEBIAN_FRONTEND=noninteractive
 #echo "$DEBCONF"
 echo "$DEBCONF" | debconf-set-selections && dpkg-reconfigure $APP
+
+/usr/sbin/service mysql stop
