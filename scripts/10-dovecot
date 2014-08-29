@@ -2,4 +2,5 @@
 
 mkdir -p /var/lib/dovecot
 chmod 0750 /var/lib/dovecot
-nohup /usr/lib/dovecot/ssl-params &
+/usr/lib/dovecot/ssl-params
+#nohup /usr/lib/dovecot/ssl-params &

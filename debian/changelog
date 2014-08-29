@@ -1,3 +1,9 @@
+opi-postsetup (1.5) vili; urgency=low
+
+  * Make sure that postestup runs before opi-control
+
+ -- Tor Krill <tor@openproducts.se>  Fri, 29 Aug 2014 15:40:27 +0200
+
 opi-postsetup (1.4) vili; urgency=low
 
   * Add setupscript for dovecot and ssl-params
