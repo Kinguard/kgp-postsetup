@@ -1,3 +1,9 @@
+opi-postsetup (1.6) vili; urgency=low
+
+  * Add enable and disable nginx scripts
+
+ -- Tor Krill <tor@openproducts.se>  Fri, 29 Aug 2014 17:07:22 +0200
+
 opi-postsetup (1.5) vili; urgency=low
 
   * Make sure that postestup runs before opi-control
