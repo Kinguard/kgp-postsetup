@@ -6,7 +6,7 @@ PWLEN=20
 
 APP=roundcubemail
 adm_pass="95lAWvhMKMVgCd7nIbPk"
-ocpass="sutuPMQbhrTJaMcbDY1q"
+ocpass="IaVIc7FNBHa5"
 
 DEBCONF="
 $APP $APP/dbconfig-install boolean true

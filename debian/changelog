@@ -1,3 +1,9 @@
+opi-postsetup (1.7) vili; urgency=low
+
+  * Update default passwords for OC and RC
+
+ -- Tor Krill <tor@openproducts.se>  Tue, 21 Oct 2014 11:15:27 +0200
+
 opi-postsetup (1.6) vili; urgency=low
 
   * Add enable and disable nginx scripts

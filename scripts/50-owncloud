@@ -6,7 +6,7 @@ PWLEN=20
 
 APP=owncloud
 adm_pass="95lAWvhMKMVgCd7nIbPk"
-ocpass="ou6Hae8hU3X92nZjkBMA"
+ocpass="MtcWc7EFnRhL"
 
 DEBCONF="
 $APP $APP/dbconfig-install boolean true
