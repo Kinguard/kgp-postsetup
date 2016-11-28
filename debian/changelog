@@ -1,3 +1,27 @@
+opi-postsetup (1.11) vili; urgency=medium
+
+  * Source my.cnf in owncloud script
+
+ -- Tor Krill <tor@openproducts.se>  Fri, 17 Jun 2016 12:55:52 +0200
+
+opi-postsetup (1.10) vili; urgency=medium
+
+  * Don't write my.cnf until password is set
+
+ -- Tor Krill <tor@openproducts.se>  Fri, 17 Jun 2016 11:45:49 +0200
+
+opi-postsetup (1.9) vili; urgency=medium
+
+  * More password tweaks
+
+ -- Tor Krill <tor@openproducts.se>  Thu, 16 Jun 2016 16:04:58 +0200
+
+opi-postsetup (1.8) vili; urgency=medium
+
+  * Add creation of mysql my.cnf with generated password
+
+ -- Tor Krill <tor@openproducts.se>  Thu, 16 Jun 2016 12:26:22 +0200
+
 opi-postsetup (1.7) vili; urgency=low
 
   * Update default passwords for OC and RC

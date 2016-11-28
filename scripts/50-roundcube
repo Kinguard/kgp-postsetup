@@ -5,18 +5,8 @@
 PWLEN=20
 
 APP=roundcubemail
-adm_pass="95lAWvhMKMVgCd7nIbPk"
-ocpass="IaVIc7FNBHa5"
-
-DEBCONF="
-$APP $APP/dbconfig-install boolean true
-$APP $APP/dbconfig-reinstall boolean true
-$APP $APP/mysql/app-pass password $ocpass
-$APP $APP/mysql/admin-pass password $adm_pass
-"
 
 export DEBIAN_FRONTEND=noninteractive
-#echo "$DEBCONF"
-echo "$DEBCONF" | debconf-set-selections && dpkg-reconfigure $APP
+dpkg-reconfigure $APP
 
 /usr/sbin/service mysql stop

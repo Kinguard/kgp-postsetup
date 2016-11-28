@@ -2,21 +2,20 @@
 
 /usr/sbin/service mysql start
 
-PWLEN=20
-
 APP=owncloud
-adm_pass="95lAWvhMKMVgCd7nIbPk"
 ocpass="MtcWc7EFnRhL"
+
+# Source default root creds
+. /root/.my.cnf 2> /dev/null || true
 
 DEBCONF="
 $APP $APP/dbconfig-install boolean true
 $APP $APP/dbconfig-reinstall boolean true
 $APP $APP/mysql/app-pass password $ocpass
-$APP $APP/mysql/admin-pass password $adm_pass
+$APP $APP/mysql/admin-pass password $password
 "
 
 export DEBIAN_FRONTEND=noninteractive
-#echo "$DEBCONF"
 echo "$DEBCONF" | debconf-set-selections && dpkg-reconfigure $APP
 
 /usr/sbin/service mysql stop
