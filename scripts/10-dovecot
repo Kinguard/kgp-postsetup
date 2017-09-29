@@ -1,6 +1,6 @@
 #! /bin/bash
 
-mkdir -p /var/lib/dovecot
-chmod 0750 /var/lib/dovecot
+#mkdir -p /var/lib/dovecot
+#chmod 0750 /var/lib/dovecot
+
 /usr/lib/dovecot/ssl-params
-#nohup /usr/lib/dovecot/ssl-params &
