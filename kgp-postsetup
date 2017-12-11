@@ -1,0 +1,10 @@
+#! /bin/bash
+
+SCRIPTDIR=/usr/share/opi-postsetup/scripts
+
+if [ -e /etc/opi/firstboot ]
+then
+	export DEBIAN_FRONTEND=noninteractive
+	run-parts $SCRIPTDIR
+	rm -f /etc/opi/firstboot
+fi

@@ -1,1 +1,2 @@
 scripts/* /usr/share/opi-postsetup/scripts/
+kgp-postsetup /usr/share/opi-postsetup/

@@ -12,6 +12,3 @@
 %:
 	dh $@ 
 
-override_dh_installinit:
-	dh_installinit -- defaults 90
-
