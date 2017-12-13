@@ -1,3 +1,10 @@
+opi-postsetup (1.14) vili; urgency=medium
+
+  * Check if mariadb is running before starting it
+  * Use mysql alias when starting mariadb
+
+ -- Tor Krill <tor@openproducts.se>  Wed, 13 Dec 2017 20:40:54 +0100
+
 opi-postsetup (1.13) vili; urgency=medium
 
   * Refactor, let opi-control start postsetup
