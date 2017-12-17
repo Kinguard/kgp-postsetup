@@ -1,3 +1,9 @@
+opi-postsetup (1.15) vili; urgency=medium
+
+  * Try run dovecot ssl-param after system reconfigure
+
+ -- Tor Krill <tor@openproducts.se>  Sun, 17 Dec 2017 20:17:19 +0100
+
 opi-postsetup (1.14) vili; urgency=medium
 
   * Check if mariadb is running before starting it
