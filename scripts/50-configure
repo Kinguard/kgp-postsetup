@@ -2,27 +2,18 @@
 
 logger "Running post setup reconfigure"
 
-STARTED=1
+# We need mysql to be started before we can proceed
+while ! systemctl -q is-active mysql
+do
+	logger "Waiting for mysql to start up"
+	sleep 1
+done
 
-if systemctl -q is-active mysql
-then
-	logger "Mysql is active, not starting"
-	STARTED=0
-else
-	logger "Temporarily starting mysql"
-	systemctl start mysql
-fi
 logger "Running reconfigure of any unconfigured packages"
+
 export DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true
 export LC_ALL=C LANGUAGE=C LANG=C
 
 dpkg --configure -a
 
-if [ $STARTED -eq 1 ]
-then
-	logger "Stopping temporary mysql instance"
-	systemctl stop mysql
-else
-	logger "Not stopping previously running mysql instance"
-fi
 logger "Reconfigure completed"
