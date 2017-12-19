@@ -1,3 +1,9 @@
+opi-postsetup (1.16) vili; urgency=medium
+
+  * Add logging to scripts
+
+ -- Tor Krill <tor@openproducts.se>  Tue, 19 Dec 2017 15:05:40 +0100
+
 opi-postsetup (1.15) vili; urgency=medium
 
   * Try run dovecot ssl-param after system reconfigure
