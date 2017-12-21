@@ -1,3 +1,9 @@
+opi-postsetup (1.19) vili; urgency=medium
+
+  * Use systemctl mask to disable nginx
+
+ -- Tor Krill <tor@openproducts.se>  Thu, 21 Dec 2017 08:37:28 +0100
+
 opi-postsetup (1.18) vili; urgency=medium
 
   * Revert to use conditional start of mysql

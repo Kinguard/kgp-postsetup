@@ -1,3 +1,5 @@
 #! /bin/bash
 
-echo exit >> /etc/default/nginx
+logger "Disable (mask) nginx"
+
+systemctl mask nginx

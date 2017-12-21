@@ -1,3 +1,5 @@
 #! /bin/bash
 
-echo "# default config" > /etc/default/nginx
+logger "Enable (unmask) nginx"
+
+systemctl unmask nginx
