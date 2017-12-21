@@ -1,3 +1,10 @@
+opi-postsetup (1.18) vili; urgency=medium
+
+  * Revert to use conditional start of mysql
+  * Convert to systemd script that should run before opi-c
+
+ -- Tor Krill <tor@openproducts.se>  Thu, 21 Dec 2017 07:24:11 +0100
+
 opi-postsetup (1.17) vili; urgency=medium
 
   * Require mysql to be running before configuring

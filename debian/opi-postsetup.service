@@ -1,0 +1,10 @@
+[Unit]
+Description=OPI postsetup executes firstrun scripts 
+
+[Service]
+Type=oneshot
+ExecStart=/usr/share/opi-postsetup/kgp-postsetup
+RemainAfterExit=true
+
+[Install]
+WantedBy=multi-user.target
