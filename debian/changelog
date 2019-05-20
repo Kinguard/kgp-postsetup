@@ -1,3 +1,9 @@
+opi-postsetup (1.20) vili; urgency=medium
+
+  * Add script to configure gpio for shutdown working around #545
+
+ -- Tor Krill <tor@openproducts.se>  Mon, 20 May 2019 10:06:05 +0200
+
 opi-postsetup (1.19) vili; urgency=medium
 
   * Use systemctl mask to disable nginx

@@ -1,0 +1,17 @@
+#! /bin/bash
+
+#
+# This is a workaround for the fact that we don't
+# enable kinguard-powermanagement package until we
+# run the firstrun configure -a Mantis #560
+#
+
+logger "Running gpiosetup for shutdown"
+
+if [ -x /etc/kinguard/scripts/shutdown-late/keepshutdown ]
+then
+	logger "Executing script"
+	/etc/kinguard/scripts/shutdown-late/keepshutdown
+else
+	logger "Script not available, skipping"
+fi
