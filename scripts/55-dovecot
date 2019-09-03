@@ -1,7 +1,0 @@
-#! /bin/bash
-
-logger "Generate ssl params for dovecot imap server"
-
-/usr/lib/dovecot/ssl-params
-
-logger "Generate ssl params completed"

@@ -1,3 +1,9 @@
+opi-postsetup (1.22) vili; urgency=medium
+
+  * Remove dovecot setup script, shouldnt be needed
+
+ -- Tor Krill <tor@openproducts.se>  Tue, 03 Sep 2019 11:39:23 +0200
+
 opi-postsetup (1.21) vili; urgency=medium
 
   * Buster update
