@@ -2,9 +2,18 @@
 
 SCRIPTDIR=/usr/share/opi-postsetup/scripts
 
+source /usr/share/kgp-bashlibrary/scripts/kgp-logging.sh
+
+log_notice "OPI Postsetup: starting"
+
 if [ -e /etc/opi/firstboot ]
 then
+	log_notice "OPI Postsetup: Processing $SCRIPTDIR"
 	export DEBIAN_FRONTEND=noninteractive
 	run-parts $SCRIPTDIR
 	rm -f /etc/opi/firstboot
+	log_notice "OPI Postesetup: Processing completed"
+else
+	log_debug "OPI Postsetup: Not first boot, skipping script processing"
 fi
+log_notice "OPI Postsetup: terminating"
