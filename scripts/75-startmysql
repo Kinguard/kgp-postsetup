@@ -1,0 +1,21 @@
+#! /bin/bash
+
+LOGNAME="OPI Postsetup"
+LOGLEVEL=8
+
+source /usr/share/kgp-bashlibrary/scripts/kgp-logging.sh
+
+log_notice "Temporary starting MySQL"
+
+rm -f /tmp/mysql-started
+
+if systemctl -q is-active mysql
+then
+	log_notice "Mysql already active, not starting"
+else
+	log_notice "Temporarily starting mysql"
+	systemctl start mysql
+	touch /tmp/mysql-started
+fi
+
+
