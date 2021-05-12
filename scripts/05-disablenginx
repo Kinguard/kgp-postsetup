@@ -2,4 +2,4 @@
 
 logger "Disable (mask) nginx"
 
-systemctl mask nginx
+systemctl mask nginx || true
