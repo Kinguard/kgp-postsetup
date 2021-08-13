@@ -1,0 +1,9 @@
+#! /bin/bash
+
+source /usr/share/kgp-bashlibrary/scripts/kgp-database.sh
+
+log_debug "Fixup missing CA file hashes"
+
+/usr/sbin/update-ca-certificates --fresh
+
+log_debug "CA fixup completed"
