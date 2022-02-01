@@ -1,3 +1,9 @@
+opi-postsetup (1.27) vigrid; urgency=medium
+
+  * Bullseye build
+
+ -- Tor Krill <tor@openproducts.se>  Tue, 01 Feb 2022 14:14:59 +0100
+
 opi-postsetup (1.26) vili; urgency=medium
 
   * Buster release
